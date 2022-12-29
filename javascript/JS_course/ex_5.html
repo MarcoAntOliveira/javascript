@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com o DOM</title>
+    <style> 
+        body{
+            background: rgb(27, 15, 187);
+            color:white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> iniciando os estudos com o  <strong>DOM</strong> em javscript</h1>
+    <p> aq vai o resultado </p>
+    <p> aprendendo a usar o DOM em javascript</p>
+    <!-- 'id' é a tag adicionada  que sera usada para a localização-->
+    <div id = "msg" > clique em mim </div>
+    <script>
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //peal arvore DOM 
+        //acessando elementos por tag
+       
+       p1.style.color= 'blue'
+       corpo.style.background =  'black'
+       corpo.style.color =  'red'
+       document.write(p1.innerText)
+       document.alert(p1.innerText)
+       document.write(p1.innerHTML)
+       document.alert(p1.innerHTML)
+       */
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+        d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Ola!'
+        
+        elementos por elemntos pelo nome
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText= 'ola'
+        
+        window.document.getElementsByClassName('msg')
+        */
+        var d = window.document.querySelector('div#msg')
+        d.style.background= 'black'
+    </script>
+
+
+</body>
+</html>
